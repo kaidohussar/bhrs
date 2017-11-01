@@ -1,0 +1,33 @@
+@import "variables";
+
+.why-choose-us {
+  font-family: $font-primary, sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h1 {
+    margin-bottom: 2em;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.why-choose-us-container {
+  padding: 5em 0;
+}
+
+.why-section {
+  text-align: center;
+  max-width: 20em;
+  h3, p {
+    color: $white;
+  }
+  @media (max-width: 1075px) {
+    margin-bottom: 1.5em !important;
+  }
+}
+
+.why-section-icon {
+  height: 6em;
+}

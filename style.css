@@ -1,0 +1,29 @@
+/*
+Theme Name: Kaido starter
+Theme URI: kaidohussar.design
+Author: Kaido Hussar
+Author URI: kaidohussar.design
+Description:  Kaido starter theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kaido-starter
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.admin-bar .navbar-fixed-top {
+	margin-top: 30px;
+}
+
+.current-menu-item > a {
+	background: #000;
+}
+
+

@@ -1,0 +1,174 @@
+@import "variables";
+
+.box-container {
+  z-index: 10;
+}
+
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -45px;
+  padding:10px 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  @media (max-width: 991px) {
+    margin-top: -15px !important;
+}
+  &.center {
+    justify-content:center;
+  }
+  .box {
+      flex: 0 1 auto;
+      flex-grow: 0;
+      max-width: 20em;
+      z-index: 52;
+      margin:10px !important;
+  }
+
+  .flex-child {
+    margin:0 10px;
+    position: relative;
+  }
+}
+
+.mask {
+  position: absolute;
+  bottom:15px;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  h3 {
+    padding-top: 15px;
+    font-size: 20px;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-primary, sans-serif;
+    letter-spacing: 0.1px;
+    transition: all .5s ease-in;
+  }
+}
+
+.h3-hover {
+  letter-spacing: .7px !important;
+  font-weight: 200;
+}
+
+.box {
+  cursor: pointer;
+      a {
+        position: relative;
+        display: inline-block;
+      }
+      a:before, a:after,
+      a .line:before,
+      a .line:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: #fff;
+        z-index: 4;
+        transition: all .6s ease;
+      }
+      a:before,
+      a:after {
+        width: 0;
+        height: 1px;
+      }
+      a .line:before,
+      a .line:after {
+        width: 1px;
+        height: 0;
+      }
+      a:before {
+        top: 3%;
+        left: 3%;
+      }
+      a:hover:before,
+      a:hover:after {
+        width: 94%;
+      }
+      a:hover .line:before,
+      a:hover .line:after {
+        height: 94%;
+      }
+      a:after {
+        bottom: 3%;
+        right: 3%;
+      }
+      a .line:before {
+        bottom: 3%;
+        left: 3%;
+      }
+      a .line:after {
+        top: 3%;
+        right: 3%;
+    }
+}
+.caret {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  &:after {
+     font-family: FontAwesome;
+     content: "\f105";
+     font-size: 30px;
+     color: $white;
+   }
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -moz-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -moz-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}

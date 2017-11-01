@@ -1,0 +1,29 @@
+@import "variables";
+
+//main container
+.proud-to-be {
+  background: #f4f4f4;
+  margin-top: -6em;
+  font-family: $font-primary, sans-serif;
+  @media (max-width: 685px) {
+    .flex-child {
+      margin-top: 2em;
+    }
+  }
+}
+
+//content container
+.proud-to-be-container {
+  padding-top: 13em;
+  padding-bottom: 5em;
+  h1 {
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    @media (max-width: 1000px) {
+        margin-top: 2em;
+    }
+  }
+  img {
+    padding-right: 2em;
+  }
+}

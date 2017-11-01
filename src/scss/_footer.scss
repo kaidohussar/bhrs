@@ -1,0 +1,149 @@
+@import "variables";
+
+footer {
+  background: $color-primary;
+  padding:2em;
+  color: $white;
+  font-family: $font-primary;
+}
+
+.info-box {
+  p {
+    margin-bottom: 0px;
+  }
+  @media (max-width: 1250px) {
+    margin-bottom: 1em;
+  }
+}
+
+.copyright {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.footer-hr {
+  border-top: 1px solid rgba(255,255,255,.22);
+}
+
+.footer-sub-heading {
+  font-size: 0.8rem;
+}
+
+.country{
+  border-bottom: 1px solid rgba(255,255,255,.22);
+  width: 25%;
+  margin-bottom: 1em;
+&:before {
+    content: '\f041';
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-size: 1em;
+   font-style: normal;
+   padding-right: 1em;
+   text-decoration:none;
+    }
+&:after {
+    content: '\f107';
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-size: 1em;
+   font-style: normal;
+   padding-left: 1em;
+   text-decoration:none;
+    }
+}
+
+
+.information {
+  a {
+    color: $white;
+    text-decoration: none !important;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+.social-media {
+  text-align: left;
+  padding-right: 0px !important;
+  a {
+    color: $white;
+    text-decoration: none !important;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+  @media (max-width: 1250px) {
+    margin-top: 2em;
+  }
+}
+
+.social-ico1 {
+  display: inline-block;
+  width: 31%;
+  text-align: left;
+  vertical-align: top;
+  &:before {
+      content: '\f16a';
+     font-family: FontAwesome;
+     font-weight: normal;
+     font-size: 2.5em;
+     font-style: normal;
+     text-decoration:none;
+}
+}
+
+.social-ico2 {
+  display: inline-block;
+  width: 31%;
+  text-align: center;
+  vertical-align: top;
+  &:before {
+      content: '\f09a';
+     font-family: FontAwesome;
+     font-weight: normal;
+     font-size: 2.5em;
+     font-style: normal;
+     text-decoration:none;
+}
+}
+
+.social-ico3 {
+  display: inline-block;
+  width: 31%;
+  text-align: right;
+  vertical-align: top;
+  &:before {
+      content: '\f0e1';
+     font-family: FontAwesome;
+     font-weight: normal;
+     font-size: 2.5em;
+     font-style: normal;
+     text-decoration:none;
+}
+}
+
+.footer-bottom {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.company {
+  float:right;
+  img {
+    max-width: 100px;
+    margin-top: -10px;
+  }
+}
+
+
+@media screen and (max-width: 600px)
+{
+  .social-ico1, .social-ico2, .social-ico3
+    {
+       width: 100%;
+       text-align: left;
+    }
+}

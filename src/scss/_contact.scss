@@ -1,0 +1,105 @@
+@import "variables";
+
+.contact-main {
+  padding: 4em 0;
+  h3 {
+    color: $color-secondary;
+    padding-bottom: 2em;
+    font-family: $font-primary, sans-serif;
+    font-weight: bold;
+    &:before {
+       font-family: FontAwesome;
+       content: "\f003";
+       font-size: 30px;
+       padding-right: 1em;
+       color: $color-secondary;
+     }
+  }
+}
+
+.contact-img {
+  img {
+    margin-top: 16px;
+  }
+}
+
+
+.gform_heading {
+  display: none;
+}
+
+.ginput_container {
+  input {
+    width: 100% !important;
+  }
+}
+
+.gform_wrapper textarea.medium{
+  height: 274px !important;
+}
+
+/*** REMOVE LABEL ON FIELDS USING PLACEHOLDER ***/
+.gfield_label {
+ display: none !important;
+}
+
+/*** FIELD STYLING ***/
+input[type=text],
+textarea {
+ background: #f8f8f8;
+ border: 1px solid #e1e1e1;
+ border-radius: 0;
+ color: $color-secondary !important;
+ padding: 10px !important;
+}
+/*** BUTTON STYLING ***/
+.gform_wrapper .gform_footer input.button {
+ float: left;
+ border: 0px;
+ background: $color-primary;
+ font-size: 22px;
+ color: $white;
+ padding: 12px 23px;
+ letter-spacing: 2px;
+ cursor: pointer;
+ &:hover {
+   background: $color-secondary !important;
+   border:0px !important;
+   padding: 12px 23px !important;
+ }
+}
+/*** BUTTON HOVER STYLING ***/
+.gform_wrapper .gform_footer input.button:hover {
+ background: rgba(0, 0, 0, 0.05);
+ border: 2px solid transparent;
+}
+
+::-webkit-input-placeholder {
+  color: $color-secondary !important;
+  font-weight: 500;
+}
+:-ms-input-placeholder {
+  color: $color-secondary !important;
+}
+::-moz-placeholder {
+  color: $color-secondary !important;
+  opacity: 1 !important;
+}
+:-moz-placeholder {
+  color: $color-secondary !important;
+  opacity: 1 !important;
+}
+
+input[type=submit] {
+    font-size: 12px !important;
+}
+
+//map
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+#map_canvas {
+  height: 400px;
+  width: 100%;
+}
