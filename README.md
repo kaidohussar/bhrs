@@ -1,1 +1,1 @@
-"# bhrs" 
+"# bhrs WordPress site" 
